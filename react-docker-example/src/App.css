@@ -5,7 +5,8 @@
 .App .data{
   margin:2rem;
   padding: .2rem;
-  border-color: #298e46;
+  border-color: rgb(180,110,30
+        );
   background-color: #ffffff;
   border-width: 1rem;
   border-radius: 25px;
@@ -28,7 +29,8 @@
   font-family: Open Sans;
   color: #555555;
   padding: .7rem 30px .7rem 75px;
-  border-left: 8px solid #78C0A8;
+  border-left: 8px solid rgb(180,110,30
+      );
   line-height: 1.6;
   position: relative;
   background: #EDEDED;
@@ -48,7 +50,8 @@
 
 .RefreshQuotesButton button {
   appearance: none;
-  background-color: #2ea44f;
+  background-color: rgb(180,110,30
+  );
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
@@ -77,7 +80,8 @@
 }
 
 .RefreshQuotesButton button:hover {
-  background-color: #2c974b;
+  background-color: rgb(180,110,30
+    );
 }
 
 .RefreshQuotesButton button:focus {
@@ -86,14 +90,14 @@
 }
 
 .RefreshQuotesButton button:disabled {
-  background-color: #94d3a2;
+  background-color: rgba(190, 125, 51, 0.991);
   border-color: rgba(27, 31, 35, .1);
   color: rgba(255, 255, 255, .8);
   cursor: default;
 }
 
 .RefreshQuotesButton button:active {
-  background-color: #298e46;
+  background-color: rgb(194, 135, 69);
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
