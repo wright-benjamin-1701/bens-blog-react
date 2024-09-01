@@ -11,6 +11,8 @@
   border-width: 1rem;
   border-radius: 25px;
   border-style:solid;
+  overflow-x: scroll;
+  min-width: 12rem;
 }
 
 .Quotes {
@@ -29,12 +31,14 @@
   margin: 50px auto;
   font-family: Open Sans;
   color: #555555;
-  padding: .7rem 30px .7rem 75px;
+  padding: .7rem .1rem .7rem .1rem;
   border-left: 8px solid rgb(180,110,30
       );
   line-height: 1.6;
   position: relative;
   background: #EDEDED;
+  max-height: 6.2rem;
+  overflow-y: scroll;
 }
 
 .SingleQuote b {
@@ -46,6 +50,7 @@
 }
 
 .RefreshQuotesButton {
+  padding:.1rem;
   margin:1rem;
 }
 
