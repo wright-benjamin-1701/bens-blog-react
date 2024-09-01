@@ -11,7 +11,7 @@ import RefreshQuotesButton from './RefreshQuotesButton';
 function App() {
 
   const [quotes, setQuotes] = useState<quote[]>([]);  
-  const BATCH_SIZE = 3;
+  const MAX_SIZE = 3;
 
   useEffect(()=>{
     
@@ -27,8 +27,8 @@ function App() {
       setQuotes(tempQuotes.slice(0,numberOfQuotes));
     }
 
-    if(quotes.length < BATCH_SIZE){
-          loadQuotes(BATCH_SIZE);
+    if(quotes.length < MAX_SIZE){
+          loadQuotes(MAX_SIZE);
     }
     
 

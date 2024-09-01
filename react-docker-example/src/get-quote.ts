@@ -13,7 +13,6 @@ const getQuote = async () => {
         && response.data?.author !== undefined
     && response.data?._id !== undefined){
         
-        console.log(response.data);
         return {
             quote:response.data.quote,
             book: response.data.book,
