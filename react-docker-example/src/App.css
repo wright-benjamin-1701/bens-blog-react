@@ -15,7 +15,8 @@
 
 .Quotes {
   padding: .25rem;
-  min-height: 10rem;
+  min-height: 20rem;
+  max-height: 32rem;
 }
 
 .Quotes p{
