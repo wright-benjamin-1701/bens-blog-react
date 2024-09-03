@@ -4,7 +4,7 @@ import axios from "axios";
 
 const getQuote = async () => {
 
-    const quoteURL = Math.random() > .5 ? 'https://recite.onrender.com/api/v1/random' : 'https://bens-blog-fast-api-tfeo4yp7iq-uc.a.run.app/random' ;
+    const quoteURL = 'https://bens-blog-fast-api-tfeo4yp7iq-uc.a.run.app/random' ;
 
     const response = await axios.get(quoteURL);
 
