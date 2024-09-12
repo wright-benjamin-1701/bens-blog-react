@@ -15,7 +15,7 @@ function Quotes(props: IProps){
     const jokeQuote = {quote:"Updates applying. 1% complete. Please wait for updates to complete.",
         book:"Windows 11",
         author:"Microsoft",
-        id:"0"
+        _id:"0"
 
     }
 
@@ -24,7 +24,7 @@ function Quotes(props: IProps){
 
 
         
-        {quotes.length > 0 ?  quotes.map((quote)=><SingleQuote key={quote.id} quote={quote}></SingleQuote>) :<SingleQuote key={jokeQuote.id} quote={jokeQuote}></SingleQuote> }
+        {quotes.length > 0 ?  quotes.map((quote)=><SingleQuote key={quote._id} quote={quote}></SingleQuote>) :<SingleQuote key={jokeQuote._id} quote={jokeQuote}></SingleQuote> }
 
     
     </div>

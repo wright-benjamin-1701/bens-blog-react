@@ -1,7 +1,7 @@
 import React, {useState,useEffect, useCallback} from 'react';
 
 import Quotes from './Quotes';
-import getQuote from './get-quote';
+import getQuotes from './get-quotes';
 
 import './App.css';
 
@@ -11,27 +11,19 @@ import RefreshQuotesButton from './RefreshQuotesButton';
 function App() {
 
   const [quotes, setQuotes] = useState<quote[]>([]);  
-  const MAX_SIZE = 3;
 
   useEffect(()=>{
     
     const loadQuotes = async (numberOfQuotes:number) => {
-      const tempQuotes = [];
-      
-      for(let i=0; i < numberOfQuotes; i++){
-        const quote= await getQuote();
-        if(quote !== undefined){
-          tempQuotes.push(quote);
-        }
-      }
-      setQuotes(tempQuotes.slice(0,numberOfQuotes));
-    }
 
-    if(quotes.length < MAX_SIZE){
-          loadQuotes(MAX_SIZE);
+      const tempQuotes =  await getQuotes(numberOfQuotes);
+      setQuotes(tempQuotes.filter((quote:quote)=>{return quote!==null}));
+    }
+   
+    if(quotes.length < 3){
+          loadQuotes(3);
     }
     
-
   },[quotes,quotes.length]);
 
   const refreshQuotes = useCallback(()=>{setQuotes([])},[setQuotes]);
