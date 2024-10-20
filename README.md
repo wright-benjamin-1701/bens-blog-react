@@ -7,11 +7,11 @@ TODO: Add unit tests and SASS for better styling patterns.
 To run locally,
 
 1. Check out the repository, navigate to the react-docker-example folder
-2. Run "npm install", "npm i axios" and then "npm start"
+2. Run "npm install", then "npm start"
 
 To run in a container,
 
-1. Check out the repository, navigate to the react-docker-example folder
+1. Check out the repository
 2. Use docker image build to build the image, and docker run to run your image. Make sure to pass the -p flag.
 
 For example, if I named the image "react-image-example", use
