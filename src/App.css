@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.App .data{
+  margin:1rem;
+  padding: .2rem;
+  border-color: rgb(180,110,30
+        );
+  background-color: #ffffff;
+  border-width: 1rem;
+  border-radius: 25px;
+  border-style:solid;
+  overflow-x: scroll;
+  min-width: 12rem;
+}
+
+
+
+
+
+
+

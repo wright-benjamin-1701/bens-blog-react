@@ -1,4 +1,5 @@
-import {quote} from "./types";
+import {quote} from "../types";
+import './styles/SingleQuote.css';
 
 interface IProps{
     quote:quote,

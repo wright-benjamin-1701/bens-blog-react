@@ -1,6 +1,8 @@
 import React from "react";
 import SingleQuote from "./SingleQuote";
-import { quote } from "./types";
+import { quote } from "../types";
+
+import './styles/Quotes.css';
 
 interface IProps {
 

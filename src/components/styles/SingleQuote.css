@@ -1,0 +1,23 @@
+.SingleQuote p {
+    font-size: 1rem;
+    width:85%;
+    margin: 1.6rem auto;
+    font-family: Open Sans;
+    color: #555555;
+    padding: .5rem .1rem .5rem .1rem;
+    border-left: 8px solid rgb(180,110,30
+        );
+    line-height: 1.25;
+    position: relative;
+    background: #EDEDED;
+    max-height: 8.5rem;
+    overflow-y: scroll;
+  }
+  
+  .SingleQuote b {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1rem;
+  }

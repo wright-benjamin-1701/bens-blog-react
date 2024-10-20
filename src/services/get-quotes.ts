@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { quote } from "./types";
+import { quote } from "../types";
 
 const getQuotes = async (number:number = 1) => {
 

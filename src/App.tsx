@@ -1,12 +1,12 @@
 import React, {useState,useEffect, useCallback} from 'react';
 
-import Quotes from './Quotes';
-import getQuotes from './get-quotes';
+import Quotes from './components/Quotes';
+import getQuotes from './services/get-quotes';
 
 import './App.css';
 
 import {quote} from "./types";
-import RefreshQuotesButton from './RefreshQuotesButton';
+import RefreshQuotesButton from './components/RefreshQuotesButton';
 
 function App() {
 
